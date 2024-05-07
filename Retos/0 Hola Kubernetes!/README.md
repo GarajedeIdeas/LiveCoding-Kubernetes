@@ -13,16 +13,22 @@
 - Accede al directorio de este reto
 `$ cd Retos/0 Hola Kubernetes`
 
-- Crea el namespace para este reto
+- Crea el namespace para este reto y explóralo
 `$ kubectl apply -f namespace.yaml`
 
-- Cambia el contexto a el nuevo namespace. Con ello, a partir de ahora todas las operaciones se harán por defecto sobre el mismo
+`$ kubectl describe namespace 0-hola-kubernetes`
+
+- Cambia el contexto a el nuevo namespace y comprueba. Con ello, a partir de ahora todas las operaciones se harán por defecto sobre el mismo
 `$ kubectl config current-context`
 
 `$ kubectl config set-context minikube --namespace=0-hola-kubernetes`
 
+`$ kubectl get pods`
+
 - Define las quotas para este namespace
-`$ kubectl apply -f namespace.yaml`
+
+`$ kubectl apply -f resourcequotas.yaml`
+
 - Despliega tu primera carga de trabajo con ***kubectl apply***
 
 `$ kubectl apply -f deployment.yaml`

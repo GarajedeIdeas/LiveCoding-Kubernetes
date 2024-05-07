@@ -1,46 +1,13 @@
 # livecoding-kubernetes
 
-## Construir y probar las cuatro imágenes Docker que utilizaremos:
-- Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell que no es la que más me gusta, pero ahí está
-- Construye las cuatro imágenes ejecutando ***docker build***
+## 0. Construir, subir a DockerHub y probar las cuatro imágenes Docker que utilizaremos:
+En carpeta Docker Images
 
-`$ cd LiveCoding-Kubernetes/Docker Images/v0.0`
-
-`$ docker build -t hola-kubernetes/basica:0.0 .`
-
-`$ cd LiveCoding-Kubernetes/Docker Images/v1.1`
-
-`$ docker build -t hola-kubernetes/basica:1.1 .`
-
-`$ cd LiveCoding-Kubernetes/Docker Images/BLUE`
-
-`$ docker build -t hola-kubernetes/blue:blue .`
-
-`$ cd LiveCoding-Kubernetes/Docker Images/GREEN`
-
-`$ docker build -t hola-kubernetes/green:green .`
-
-`$ docker image ls`
-
-![alt tag](./Screenshots/docker-image-ls.png)
-
-
-### Nota
-- Si quieres probar alguna imagen por ejemplo la blue, puedes ejecutar su contenedor con ***docker run***:
-
-`$ docker run -p 8080:80 --name blue_blue -d hola-kubernetes/blue:blue`
-
-`$ docker container ls`
-
-![alt tag](./Screenshots/docker-container-ls.png)
-
-- Ábrela en tu navegador escribiendo localhost:8080. Sí, es así de azul :D
-
-![alt tag](./Screenshots/localhost8080.png)
-- Recuerda borrar el contenedor (pero no la imagen!)
-
-`$ docker rm -f blue_blue`
-
+## 1. Retos de Kubernetes:
+En carpeta Retos
+1. Desplegar en Kubernetes. Temas: Namespaces, resource quotas, primer despliegue, servicio, right-sizing, replicas-autodescubrimiento, escalado horizontal
+2. Rollouts y Rollbacks
+3. Blue-green deployments
 
 
 ## Setup
