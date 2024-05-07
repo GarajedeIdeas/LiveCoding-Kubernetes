@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Docker Images",
-    "\\Docker Images\\BLUE"
+    "\\Docker Images\\BLUE",
+    "\\Retos",
+    "\\Retos\\0 Hola Kubernetes!"
   ],
-  "SelectedNode": "\\Docker Images",
+  "SelectedNode": "\\Retos\\0 Hola Kubernetes!\\README.md",
   "PreviewInSolutionExplorer": false
 }

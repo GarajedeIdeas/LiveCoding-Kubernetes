@@ -1,4 +1,9 @@
 # livecoding-kubernetes
+**Table of Contents**
+
+[TOCM]
+
+[TOC]
 ## Construir y probar las cuatro imágenes Docker que utilizaremos:
 - Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell que no es la que más me gusta, pero ahí está
 - Construye las cuatro imágenes ejecutando ***docker build***
@@ -33,12 +38,13 @@
 
 ![alt tag](./Screenshots/docker-container-ls.png)
 
-- Ábrela en tu navegador escribiendo localhost:8080
+- Ábrela en tu navegador escribiendo localhost:8080. Sí, es así de azul :D
 
 ![alt tag](./Screenshots/localhost8080.png)
 - Recuerda borrar el contenedor (pero no la imagen!)
 
 `$ docker rm -f blue_blue`
+
 
 
 ## Setup
