@@ -26,6 +26,7 @@
 `$ docker rm -f blue_blue`
 
 
+
 ## Setup
 - Laptop OS: Windows 11 Home
 - Docker Desktop 4.28.0
