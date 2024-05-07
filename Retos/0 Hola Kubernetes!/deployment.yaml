@@ -1,0 +1,20 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hola-kubernetes-basica-00
+spec:
+  selector:
+    matchLabels:
+      app: hola-kubernetes-basica-00
+  replicas: 1 # numero de pods
+  template:
+    metadata:
+      labels:
+        app: hola-kubernetes-basica-00
+    spec:
+      containers:
+      - name: hola-kubernetes-basica-00
+        image: hola-kubernetes/basica:0.0
+        ports:
+        - containerPort: 80

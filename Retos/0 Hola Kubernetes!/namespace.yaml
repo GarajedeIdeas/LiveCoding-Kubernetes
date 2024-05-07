@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: "0-hola-kubernetes"
+  labels:
+    name: "0-hola-kubernetes"
+    reto: "0-reto"
+    entorno: "no-productivo"

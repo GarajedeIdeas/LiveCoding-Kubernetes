@@ -1,9 +1,33 @@
-# livecoding-kubernetes
-## Construir y probar las cuatro imágenes Docker que utilizaremos:
-- Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell que no es la que más me gusta, pero ahí está
-- Construye las cuatro imágenes ejecutando ***docker build***
+# 0 Hola Kubernetes
+## Temas: Namespaces, resource quotas, primer despliegue, servicio, right-sizing, replicas-autodescubrimiento, escalado horizontal
+## Objectivo: Desplegar y acceder a nuestra primera carga de trabajo en Kubernetes
+- Arranca minikube ***minikube start***
 
-`$ cd LiveCoding-Kubernetes/Docker Images/v0.0`
+`$ minikube start`
+- Just for fun, juega con kubectl, la línea de comandos de kubernetes
+
+`$ kubectl get nodes`
+`$ kubectl describe node minikube`
+`$ kubectl get events --all-namespaces`
+
+- Accede al directorio de este reto
+`$ cd Retos/0 Hola Kubernetes`
+
+- Crea el namespace para este reto
+`$ kubectl apply -f namespace.yaml`
+
+- Cambia el contexto a el nuevo namespace. Con ello, a partir de ahora todas las operaciones se harán por defecto sobre el mismo
+`$ kubectl config current-context`
+
+`$ kubectl config set-context minikube --namespace=0-hola-kubernetes`
+
+- Define las quotas para este namespace
+`$ kubectl apply -f namespace.yaml`
+- Despliega tu primera carga de trabajo con ***kubectl apply***
+
+`$ kubectl apply -f deployment.yaml`
+
+- Como usamos Minikube, puedes exponer y acceder a tu servicio con ***kubectl apply***
 
 `$ docker build -t hola-kubernetes/basica:0.0 .`
 
