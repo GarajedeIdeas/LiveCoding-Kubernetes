@@ -3,7 +3,7 @@
 Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell.
 Accede a la carpeta "LiveCoding-Kubernetes/Docker Images"
 `> cd LiveCoding-Kubernetes/Docker Images`
-docker build -t hola-kubernetes/basica:0.0 ./BLUE
+docker build -t hola-kubernetes/basica:0.0 source/repos/GarajedeIdeas/LiveCoding-Kubernetes
 docker image ls
 docker run -p 8080:80 --name basico_00 -d hola-kubernetes/basica:0.0
 docker container ls
