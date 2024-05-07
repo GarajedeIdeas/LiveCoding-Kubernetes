@@ -21,6 +21,7 @@
 
 `$ docker image ls`
 
+![alt tag](./Screenshots/docker-image-ls.png)
 `
 REPOSITORY                                                                   TAG       IMAGE ID       CREATED        SIZE
 hola-kubernetes/green                                                        green     13084b9d8152   2 hours ago    48.3MB
