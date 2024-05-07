@@ -1,7 +1,8 @@
 # livecoding-kubernetes
 ## Construir y probar las cuatro imágenes Docker que utilizaremos:
 - Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell
-- Construye las cuatro imágenes ejecutando *docker build*
+- Construye las cuatro imágenes ejecutando ***docker build***
+
 `$ cd LiveCoding-Kubernetes/Docker Images`
 `$ docker build -t hola-kubernetes/basica:0.0 source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/v0.0`
 `$ docker build -t hola-kubernetes/basica:1.1 source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/v1.1`
@@ -9,7 +10,7 @@
 `$ docker build -t hola-kubernetes/green:green source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/GREEN`
 `$ docker image ls`
 ### Nota
-- Si quieres probar alguna imagen por ejemplo la blue, puedes ejecutar su contenedor con *docker run*:
+- Si quieres probar alguna imagen por ejemplo la blue, puedes ejecutar su contenedor con ***docker run***:
 `$ docker run -p 8080:80 --name blue_blue -d hola-kubernetes/blue:blue`
 `$ docker container ls`
 - Ábrela en tu navegador escribiendo localhost:8080
