@@ -30,7 +30,12 @@
 `$ docker run -p 8080:80 --name blue_blue -d hola-kubernetes/blue:blue`
 
 `$ docker container ls`
+
+![alt tag](./Screenshots/docker-container-ls.png)
+
 - Ábrela en tu navegador escribiendo localhost:8080
+
+![alt tag](./Screenshots/localhost8080.png)
 - Recuerda borrar el contenedor (pero no la imagen!)
 
 `$ docker rm -f blue_blue`
