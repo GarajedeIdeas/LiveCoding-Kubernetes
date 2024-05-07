@@ -1,9 +1,5 @@
 # livecoding-kubernetes
-**Table of Contents**
 
-[TOCM]
-
-[TOC]
 ## Construir y probar las cuatro imágenes Docker que utilizaremos:
 - Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell que no es la que más me gusta, pero ahí está
 - Construye las cuatro imágenes ejecutando ***docker build***
