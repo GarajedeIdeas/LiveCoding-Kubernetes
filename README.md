@@ -1,28 +1,21 @@
 # livecoding-kubernetes
-## Construir y probar las imágenes Docker que utilizaremos:
-Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell
-Accede a la carpeta "LiveCoding-Kubernetes/Docker Images"
+## Construir y probar las cuatro imágenes Docker que utilizaremos:
+- Abre la línea de comandos que más te guste, en el Live Coding uso Windows Developer PowerShell
+- Construye las cuatro imágenes ejecutando *docker build*
 `$ cd LiveCoding-Kubernetes/Docker Images`
-docker build -t hola-kubernetes/basica:0.0 source/repos/GarajedeIdeas/LiveCoding-Kubernetes
-docker image ls
-docker run -p 8080:80 --name basico_00 -d hola-kubernetes/basica:0.0
-docker container ls
-Escribe en tu navegador localhost:8080
-Borra el contenedor:
-Docker rm -f basica_00
+`$ docker build -t hola-kubernetes/basica:0.0 source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/v0.0`
+`$ docker build -t hola-kubernetes/basica:1.1 source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/v1.1`
+`$ docker build -t hola-kubernetes/blue:blue source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/BLUE`
+`$ docker build -t hola-kubernetes/green:green source/repos/GarajedeIdeas/LiveCoding-Kubernetes/Docker Images/GREEN`
+`$ docker image ls`
+### Nota
+- Si quieres probar alguna imagen por ejemplo la blue, puedes ejecutar su contenedor con *docker run*:
+`$ docker run -p 8080:80 --name blue_blue -d hola-kubernetes/blue:blue`
+`$ docker container ls`
+- Ábrela en tu navegador escribiendo localhost:8080
+- Recuerda borrar el contenedor (pero no la imagen!)
+`$ docker rm -f blue_blue`
 
-
-docker build -t hola-kubernetes/basica:1.1 .
-docker run -p 8080:80 --name basico_11 -d hola-kubernetes/basica:1.1
-
-docker build -t hola-kubernetes/blue:blue .
-docker run -p 8080:80 --name basico_blue -d hola-kubernetes/blue:blue
-
-docker build -t hola-kubernetes/green:green .
-docker run -p 8080:80 --name basico_green-d hola-kubernetes/green:green
-
-Borrar los contenedores (no las imágenes!):
-docker rm - f 
 
 ## Setup
 - Laptop OS: Windows 11 Home
