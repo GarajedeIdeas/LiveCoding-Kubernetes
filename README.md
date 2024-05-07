@@ -21,7 +21,8 @@
 
 `$ docker image ls`
 
-`$ REPOSITORY                                                                   TAG       IMAGE ID       CREATED        SIZE
+`$ 
+REPOSITORY                                                                   TAG       IMAGE ID       CREATED        SIZE
 hola-kubernetes/green                                                        green     13084b9d8152   2 hours ago    48.3MB
 hola-kubernetes/blue                                                         blue      f72236ba25ae   2 hours ago    48.3MB
 hola-kubernetes/basica                                                       1.1       d8c4fc63c569   2 hours ago    48.3MB
