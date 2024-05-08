@@ -1,13 +1,13 @@
 # livecoding-kubernetes
 
-## 0. Construir, subir a DockerHub y probar las cuatro imágenes Docker que utilizaremos:
+## Construir, subir a DockerHub y probar las cuatro imágenes Docker que utilizaremos:
 En carpeta Docker Images
 
-## 1. Retos de Kubernetes:
+## Retos de Kubernetes:
 En carpeta Retos
 1. Desplegar en Kubernetes. Temas: Namespaces, resource quotas, primer despliegue, servicio, right-sizing, replicas-autodescubrimiento, escalado horizontal
-2. Rollouts y Rollbacks
-3. Blue-green deployments
+2. Rollouts y Rollbacks. Temas: Alta disponibilidad en cambios, automatización rollouts y rollbacks
+3. Blue-green deployments. Tema: Blue-green deployment
 
 
 ## Setup
@@ -20,7 +20,6 @@ En carpeta Retos
 
 ## Materiales
 - Este repo =)
-- `<link>` : <https://github.com>
 - `<Presentación de este Live Coding>`: <https://view.genial.ly/6637f68001b64c001572a91a>
 - `<Presentación relacionada en la SalmorejoTech 2024 "Microservicios. Contenedores. Kubernetes todo a la vez!">`: <https://view.genial.ly/66184816e948a90013c70712>
 

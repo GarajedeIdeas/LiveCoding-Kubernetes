@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: hola-kubernetes-basica-00
-        image: hola-kubernetes/basica:0.0
+        image: marisamartinserrano/hola-kubernetes-basica:0.0
         ports:
         - containerPort: 80
