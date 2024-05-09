@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Docker Images",
+    "\\Docker Images\\BLUE",
     "\\Retos",
     "\\Retos\\0 Hola Kubernetes!"
   ],
-  "SelectedNode": "\\Retos\\0 Hola Kubernetes!\\resource-quota.yaml",
+  "SelectedNode": "\\Retos\\0 Hola Kubernetes!\\hpa.yaml",
   "PreviewInSolutionExplorer": false
 }

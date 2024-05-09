@@ -1,5 +1,5 @@
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hola-kubernetes-basica-00
@@ -7,7 +7,12 @@ spec:
   selector:
     matchLabels:
       app: hola-kubernetes-basica-00
-  replicas: 1 # numero de pods
+  replicas: 3 # numero de pods
+  strategy:
+  type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 0
   template:
     metadata:
       labels:
@@ -18,3 +23,10 @@ spec:
         image: marisamartinserrano/hola-kubernetes-basica:0.0
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "2m"
+          limits:
+            memory: "128Mi"
+            cpu: "2m"

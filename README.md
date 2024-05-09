@@ -4,7 +4,7 @@
 En carpeta Docker Images
 
 ## Retos de Kubernetes:
-En carpeta Retos
+En carpeta Retos, ver README.md para hacer los ejercicios del Live Coding
 1. Desplegar en Kubernetes. Temas: Namespaces, resource quotas, primer despliegue, servicio, right-sizing, replicas-autodescubrimiento, escalado horizontal
 2. Rollouts y Rollbacks. Temas: Alta disponibilidad en cambios, automatización rollouts y rollbacks
 3. Blue-green deployments. Tema: Blue-green deployment
