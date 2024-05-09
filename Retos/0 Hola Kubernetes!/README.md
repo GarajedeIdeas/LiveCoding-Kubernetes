@@ -167,7 +167,7 @@ Events:
 Normal   SuccessfulRescale             2m2s                 horizontal-pod-autoscaler  New size: 1; reason: All metrics below target
 
 - Aquí vemos que ha bajad las réplicas a 1 porque no ha carga suficiente
-- 
+  
 ### 6. Rollout & Rollback
 - Para hacerlo mas visual, borra el despliegue anterior
 
